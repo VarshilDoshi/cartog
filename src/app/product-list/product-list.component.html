@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="text-center d-flex justify-content-center mb-2" *ngIf="addedInCart">
+        <ngb-toast class="bg-success text-light" [delay]="5000" [autohide]="false">{{addedInCart}} is added in cart.</ngb-toast>
+    </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let item of (items$ | async)" class="slide">
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="card mb-4 box-shadow">
+                        <img [src]="item.sku.image" alt="" width="300" height="200">
+                        <div class="card-body">
+                            <h5>
+                                <a class="card-link" [routerLink]="['/detail/' + item.id]">{{item.sku.title}}</a>
+                            </h5>
+                            <button class="btn btn-outline-secondary" (click)="addProductToCart(item)">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ngx-slick-carousel>
+</div>

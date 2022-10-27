@@ -1,0 +1,46 @@
+{
+  "id": "1",
+  "items": [
+    { 
+      "id": "123",
+      "quantity": 1,
+      "sku": {
+        "id": "1",
+        "title": "Canon DSLR",
+        "price": 99.99,
+        "image": "assets/images/canon.jpg"
+      }
+    },
+    { 
+      "id": "456",
+      "quantity": 1,
+      "sku": {
+        "id": "2",
+        "title": "Sony Headphone",
+        "price": 22.99,
+        "image": "assets/images/headphone.jpg"
+      }
+    },
+    { 
+      "id": "678",
+      "quantity": 1,
+      "sku": {
+        "id": "3",
+        "title": "Sony Play Station",
+        "price": 25.99,
+        "image": "assets/images/play-station.jpg"
+      }
+    },
+    { 
+      "id": "891",
+      "quantity": 1,
+      "sku": {
+        "id": "4",
+        "title": "Apple Watch",
+        "price": 50.99,
+        "image": "assets/images/watch.jpg"
+      }
+    }
+  ],
+  "subTotal": 0
+}
